@@ -132,17 +132,25 @@ python -m http.server 5500
 - `PATCH /api/books/:id` - Update book (ADMIN only)
 - `DELETE /api/books/:id` - Delete book (ADMIN only)
 
-## Default Users
+## Getting Started
 
-You can register new users or use these test accounts:
+### Create Users
 
-**ADMIN Account:**
-- Email: admin@example.com
-- Password: Admin123
+There are no default users in the database. You need to register users first:
 
-**STUDENT Account:**
-- Email: student@example.com
-- Password: Student123
+**1. Register ADMIN user:**
+- Go to `http://127.0.0.1:5500/login.html`
+- Click "Register" tab
+- Fill in the form and select Role: ADMIN
+- Password must be at least 8 characters with 1 letter and 1 number
+- User must be at least 13 years old
+
+**2. Register STUDENT user:**
+- Follow the same steps but select Role: STUDENT
+
+**Example test accounts you can create:**
+- ADMIN: admin@example.com / Admin123
+- STUDENT: student@example.com / Student123
 
 ## Testing
 
