@@ -15,6 +15,9 @@ A simple book management application built with NestJS (Backend) and Vanilla Jav
   - Publication year validation (4-digit number, not in the future)
 - **Responsive UI**: Clean and modern interface with HTML/CSS/JavaScript
 
+## Video demo part 1
+[Watch on YouTube](https://youtu.be/3rRixPlEqss)
+
 ## Tech Stack
 
 ### Backend
