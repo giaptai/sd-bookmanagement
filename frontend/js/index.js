@@ -92,25 +92,25 @@ function renderBookList(result, page) {
 
         // Previous button
         if (page > 1) {
-            p += `<li><a href="#" onClick="getAll(${page - 1})">&laquo;</a></li>`;
+            p += `<li><a href="javascript:void(0)" onClick="getAll(${page - 1})">&laquo;</a></li>`;
         } else {
-            p += `<li class="disabled"><a href="#">&laquo;</a></li>`;
+            p += `<li class="disabled"><a href="javascript:void(0)">&laquo;</a></li>`;
         }
 
         // Page numbers
         for (let i = 1; i <= totalPages; i++) {
             if (page === i) {
-                p += `<li><a href="" class="active">${i}</a></li>`;
+                p += `<li><a href="javascript:void(0)" class="active">${i}</a></li>`;
             } else {
-                p += `<li><a href="" onClick="getAll(${i})">${i}</a></li>`;
+                p += `<li><a href="javascript:void(0)" onClick="getAll(${i})">${i}</a></li>`;
             }
         }
 
         // Next button
         if (page < totalPages) {
-            p += `<li><a href="#" onClick="getAll(${page + 1})">&raquo;</a></li>`;
+            p += `<li><a href="javascript:void(0)" onClick="getAll(${page + 1})">&raquo;</a></li>`;
         } else {
-            p += `<li class="disabled"><a href="#">&raquo;</a></li>`;
+            p += `<li class="disabled"><a href="javascript:void(0)">&raquo;</a></li>`;
         }
 
         document.getElementById('pagination').innerHTML = p;
